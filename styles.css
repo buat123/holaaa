@@ -1,0 +1,183 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100%;
+  font-family: "poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 300vw; /* 3 sections, each 100vw */
+  height: 100vh;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.container .card {
+  flex: 0 0 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.container .card .card1-content,
+.container .card .card2-content,
+.container .card .card3-content,
+.container .card .card4-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 5%;
+  box-shadow: 0 0 4px black, 0 0 8px black;
+  border: 1px solid black;
+}
+
+/* SECTION 1 CONTENT START */
+.container .card .card1-content h1 {
+  color: red;
+  text-shadow: 0 0 10px white;
+}
+
+.container .card .card1-content h3 {
+  color: lightblue;
+  text-shadow: 0 0 10px white;
+}
+
+.container .card .card1-content p {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.container .card .card1-content a {
+  background-color: lightblue;
+  text-decoration: none;
+  padding: 0.7rem 2rem;
+  border-radius: 5px;
+  font-weight: 600;
+  color: white;
+  text-shadow: 0 0 3px black;
+}
+/* SECTION 1 CONTENT END */
+
+/* SECTION 2 CONTENT START */
+.container .card .card2-content p {
+  font-weight: 600;
+}
+
+.container .card .card2-content .btn {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.container .card .card2-content .btn button,
+.container .card .card2-content .btn a {
+  background-color: lightcoral;
+  color: lightgoldenrodyellow;
+  margin-right: 2rem;
+  padding: 0.5rem 2rem;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: 700;
+}
+/* SECTION 2 CONTENT END */
+
+/* SECTION 3 CONTENT START */
+
+.container .card .card3-content p {
+  font-size: 1rem;
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+}
+
+.container .card .card3-content img {
+  margin: 0;
+}
+
+.container .card .card3-content .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.container .card .card3-content .btn button,
+.container .card .card3-content .btn a {
+  font-size: 1rem;
+  font-family: "poppins", sans-serif;
+  padding: 0.3rem 1rem;
+  margin-right: 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 2px solid black;
+  background-color: lightgoldenrodyellow;
+  color: chocolate;
+  font-weight: 600;
+}
+
+.container .card .card3-content .btn .tak {
+  background-color: chocolate;
+  color: lightgoldenrodyellow;
+}
+/* SECTION 3 CONTENT END */
+
+/* SECTION 4 CONTENT START */
+.container .card .card4-content p {
+  margin: 0.5rem 0 0.5rem 0;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.container .card .card4-content img {
+  margin: 0;
+}
+
+.container .card .card4-content a {
+  text-decoration: none;
+  background-color: lawngreen;
+  color: lemonchiffon;
+  padding: 0.4rem 2.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 2px solid black;
+  text-shadow: 0 0 2px black;
+}
+/* SECTION 4 CONTENT END */
+
+/* HP DEVICE */
+@media (max-width: 450px) {
+  .container .card .card1-content {
+    text-align: center;
+  }
+
+  .container .card .card2-content {
+    text-align: center;
+  }
+
+  .container .card .card2-content .btn button,
+  .container .card .card2-content .btn a {
+    padding: 0.3rem 1rem;
+  }
+
+  .container .card .card3-content {
+    text-align: center;
+  }
+
+  .container .card .card4-content {
+    text-align: center;
+  }
+}
